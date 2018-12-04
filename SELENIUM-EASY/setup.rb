@@ -6,8 +6,6 @@ ENV['OZ_CONFIG_DIR'] = "#{File.dirname(__FILE__)}/config"
 require_relative '../CORE/setup.rb'
 
 require_all('../SELENIUM-EASY/overrides/elements')
-
-require_all('../SELENIUM-EASY/overrides/elements')
 require_all('../SELENIUM-EASY/overrides/world_extensions')
 
 require_relative '../SELENIUM-EASY/pages/selenium_easy_root_page.rb'
