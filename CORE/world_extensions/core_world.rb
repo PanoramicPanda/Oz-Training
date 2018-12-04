@@ -20,7 +20,7 @@ module CoreWorld
     end
 
     def set_default_watir_timeout
-      Watir.default_timeout = @configuration['DEFAULT_ELEMENT_TIMEOUT']
+        Watir.default_timeout = @configuration['DEFAULT_ELEMENT_TIMEOUT']
     end
 
     def set_root_page(page_class)
