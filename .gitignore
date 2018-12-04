@@ -1,0 +1,17 @@
+#Intellij configs
+.idea
+
+#Cucumber output files
+results.json
+*.html
+
+#Oz output files
+debug.log
+page_graph.dot
+
+#Visual studio code configs
+.vscode
+
+#Bundler config, binstubs and such
+.bundle
+bin
