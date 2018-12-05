@@ -12,3 +12,9 @@ Feature: Examples
     Examples:
       | Top Level Nav Button    |
       | Input Forms Nav Button  |
+
+  Scenario: Filling Single Input Field
+    Given I am on the Simple Form Demo Page
+    When I fill the page with Single Input Field Test
+    And I click the Show Message Button
+    Then I can see that all the content on the page is correct

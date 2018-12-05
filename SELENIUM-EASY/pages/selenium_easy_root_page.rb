@@ -27,13 +27,36 @@ class SeleniumEasyRootPage < CorePage
     end
   end
 
-  def to_simple_form_page
-    click_nav(:input_forms_nav_button, :simple_form_demo_nav_button)
+  def expected_data(data_name = "DEFAULT")
+    expected_data = super(data_name)
+
+    @world.ledger.get_page_values(self.class).each do |element, value|
+      expected_data[element] = value
+    end
+
+    expected_data
   end
 
   def click_nav(top_level, link)
     click_on(top_level)
     click_on(link)
   end
+
+  def to_simple_form_page
+    click_nav(:input_forms_nav_button, :simple_form_demo_nav_button)
+  end
+
+  def to_checkbox_demo_page
+    click_nav(:input_forms_nav_button, :checkbox_demo_nav_button)
+  end
+
+  def to_radio_buttons_demo_page
+    click_nav(:input_forms_nav_button, :radio_buttons_demo_nav_button)
+  end
+
+  def to_select_dropdown_list_page
+    click_nav(:input_forms_nav_button, :select_dropdown_list_nav_button)
+  end
+
 
 end

@@ -1,0 +1,12 @@
+INPUT_DATA:
+  DEFAULT:
+    :input_forms_nav_button:
+  SINGLE_INPUT_FIELD_TEST:
+    :message_text_field: 'This is running a basic test.'
+EXPECTED_DATA:
+  DEFAULT:
+    :message_text_field: ''
+    :message_display_static_text: ''
+    :value_1_text_field: ''
+    :value_2_text_field: ''
+    :value_display_static_text: ''
