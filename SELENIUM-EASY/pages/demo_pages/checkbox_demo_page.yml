@@ -3,4 +3,4 @@ INPUT_DATA:
     :input_forms_nav_button:
 EXPECTED_DATA:
   DEFAULT:
-    :day_select_list: 'Select One'
+    :input_forms_nav_button:

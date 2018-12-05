@@ -13,10 +13,11 @@ Feature: Examples
       | Top Level Nav Button    |
       | Input Forms Nav Button  |
 
-  Scenario Outline: Testing Navigation
+  Scenario Outline: Testing Navigation and Defaults
     Given I am on the Demo Home Page
     When I proceed to the <Next Page> Page
     Then I should see the <Next Page> Page
+    And I can see that all the content on the page is correct
     Examples:
       | Next Page         |
       | Simple Form Demo  |
