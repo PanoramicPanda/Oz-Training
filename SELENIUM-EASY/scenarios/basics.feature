@@ -5,13 +5,21 @@ Feature: Examples
     And I can see that all the content on the page is correct
 
   Scenario Outline: Testing NavBar Toggles
-    Given  I am on the Demo Home Page
+    Given I am on the Demo Home Page
     And I can see that all the content on the page is correct
     When I click the <Top Level Nav Button>
     Then I can see that all the content on the page is correct
     Examples:
       | Top Level Nav Button    |
       | Input Forms Nav Button  |
+
+  Scenario Outline: Testing Navigation
+    Given I am on the Demo Home Page
+    When I proceed to the <Next Page> Page
+    Then I should see the <Next Page> Page
+    Examples:
+      | Next Page         |
+      | Simple Form Demo  |
 
   Scenario: Filling Single Input Field
     Given I am on the Simple Form Demo Page
