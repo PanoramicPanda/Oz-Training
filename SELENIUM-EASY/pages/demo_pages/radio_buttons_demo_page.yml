@@ -1,0 +1,7 @@
+INPUT_DATA:
+  DEFAULT:
+    :input_forms_nav_button:
+EXPECTED_DATA:
+  DEFAULT:
+    :male_radio_button: 'unselected'
+    :female_radio_button: 'unselected'
