@@ -1,0 +1,6 @@
+INPUT_DATA:
+  DEFAULT:
+    :input_forms_nav_button:
+EXPECTED_DATA:
+  DEFAULT:
+    :input_forms_nav_button:
