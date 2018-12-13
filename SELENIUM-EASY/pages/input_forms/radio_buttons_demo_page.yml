@@ -1,6 +1,12 @@
 INPUT_DATA:
   DEFAULT:
     :input_forms_nav_button:
+  MALE_TEST:
+    :male_radio_button: 'selected'
+  FEMALE_TEST:
+    :female_radio_button: 'selected'
+  NEITHER_TEST:
+    :input_forms_nav_button:
 EXPECTED_DATA:
   DEFAULT:
     :male_radio_button: 'unselected'

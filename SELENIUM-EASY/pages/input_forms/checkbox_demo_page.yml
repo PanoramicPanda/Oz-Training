@@ -1,6 +1,9 @@
 INPUT_DATA:
   DEFAULT:
     :input_forms_nav_button:
+  CHECKBOX_DEMO_TEST:
+    :toggle_checkbox: 'checked'
 EXPECTED_DATA:
   DEFAULT:
-    :input_forms_nav_button:
+    :toggle_checkbox: 'unchecked'
+    :success_message_static_text: 'Success - Check box is checked'

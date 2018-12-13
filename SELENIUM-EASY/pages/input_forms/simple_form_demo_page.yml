@@ -3,6 +3,9 @@ INPUT_DATA:
     :input_forms_nav_button:
   SINGLE_INPUT_FIELD_TEST:
     :message_text_field: 'This is running a basic test.'
+  TWO_INPUT_FIELDS_TEST:
+    :value_1_text_field: '2'
+    :value_2_text_field: '24'
 EXPECTED_DATA:
   DEFAULT:
     :message_text_field: ''

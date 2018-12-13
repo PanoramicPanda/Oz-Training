@@ -1,6 +1,8 @@
 INPUT_DATA:
   DEFAULT:
     :input_forms_nav_button:
+  SELECT_LIST_TEST:
+    :day_select_list: 'Friday'
 EXPECTED_DATA:
   DEFAULT:
     :day_select_list: 'Please select'
