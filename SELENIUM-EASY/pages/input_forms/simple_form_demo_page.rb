@@ -25,7 +25,7 @@ class SimpleFormDemoPage < SeleniumEasyRootPage
       number_1 = Integer(@world.ledger.get_value(self.class, value_1.name)) rescue nil
       number_2 = Integer(@world.ledger.get_value(self.class, value_2.name)) rescue nil
       total = (number_1.nil? || number_2.nil?) ? 'NaN' : number_1 + number_2
-      @world.ledger.record_fill(value_display.name, total)
+      @world.ledger.record_fill(value_display.name, total.to_s)
     end
 
   end
